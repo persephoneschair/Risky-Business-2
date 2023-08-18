@@ -60,7 +60,7 @@ public class GameplayPennys : MonoBehaviour
 
     private void AwardPennys()
     {
-        List<PlayerObject> list = PlayerManager.Get.players.OrderByDescending(p => p.totalCorrect).ThenBy(p => p.twitchName).Where(x => x.points > 0).ToList();
+        List<PlayerObject> list = PlayerManager.Get.players.OrderByDescending(p => p.totalCorrect).ThenBy(p => p.twitchName).Where(x => x.bankedPoints > 0).ToList();
         PlayerPennyData ppd;
 
         LoadJSON();
@@ -90,7 +90,7 @@ public class GameplayPennys : MonoBehaviour
 
     private void AwardMedals()
     {
-        List<PlayerObject> topTwo = PlayerManager.Get.players.Where(x => !x.eliminated).OrderByDescending(x => x.points).ToList();
+        List<PlayerObject> topTwo = PlayerManager.Get.players.Where(x => !x.eliminated).OrderByDescending(x => x.bankedPoints).ToList();
         LoadMedalJSON();
 
         if(topTwo.Count == 2)

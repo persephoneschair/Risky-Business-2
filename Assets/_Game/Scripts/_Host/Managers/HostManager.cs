@@ -45,8 +45,8 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
             else
             {
                 pl.otp = "";
-                pl.podium.containedPlayer = null;
-                pl.podium = null;
+                //pl.podium.containedPlayer = null;
+                //pl.podium = null;
                 pl.playerClientRef = null;
                 pl.playerName = "";
                 PlayerManager.Get.players.Remove(pl);
@@ -89,6 +89,24 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
     public void SendPayloadToClient(Control.Player pl, EventLibrary.HostEventType e, string data)
     {
         host.UpdatePlayerData(pl, EventLibrary.GetHostEventTypeString(e), data);
+    }
+    public void UpdateClientLeaderboards()
+    {
+        List<PlayerObject> lb = PlayerManager.Get.players.OrderByDescending(x => x.bankedPoints).ThenBy(x => x.playerName).ToList();
+
+        string payload = "";
+        for (int i = 0; i < lb.Count; i++)
+        {
+            string bnk = lb[i].bankedPoints.ToString();
+            string rsk = lb[i].riskPoints.ToString();
+
+            payload += $"{lb[i].playerName.ToUpperInvariant()}|{bnk}|{rsk}";
+            if (i + 1 != lb.Count)
+                payload += "¬";
+        }
+
+        foreach (PlayerObject pl in lb)
+            SendPayloadToClient(pl, EventLibrary.HostEventType.Leaderboard, payload);
     }
 
     public void OnReceivePayloadFromClient(EventMessage e)

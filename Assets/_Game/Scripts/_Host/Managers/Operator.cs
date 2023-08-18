@@ -22,14 +22,12 @@ public class Operator : SingletonMonoBehaviour<Operator>
     [Header("Quesion Data")]
     public TextAsset questionPack;
 
-    private void Awake()
-    {
-        if (recoveryMode)
-            skipOpeningTitles = true;
-    }
 
     private void Start()
     {
+        if (recoveryMode)
+            skipOpeningTitles = true;
+
         HostManager.Get.host.ReloadHost = recoveryMode;
         if (recoveryMode)
             SaveManager.RestoreData();

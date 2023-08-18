@@ -39,7 +39,7 @@ public class GlobalLeaderboardStrap : MonoBehaviour
         containedPlayer = pl;
         playerNameMesh.text = pl.playerName;
         avatarRend.texture = pl.profileImage;
-        totalCorrectMesh.text = pl.points.ToString();
+        totalCorrectMesh.text = pl.bankedPoints.ToString();
         if (!isClone)
             pl.strap = this;
         else
@@ -50,21 +50,21 @@ public class GlobalLeaderboardStrap : MonoBehaviour
     {
         backgroundRend.color = hotseat ? backgroundCols[0] : backgroundCols[1];
         borderRend.color = hotseat ? borderCols[0] : borderCols[1];
-        totalCorrectMesh.text = containedPlayer.points.ToString();
+        totalCorrectMesh.text = containedPlayer.bankedPoints.ToString();
     }
 
     public void SetCorrectOrIncorrectColor(bool correct)
     {
         backgroundRend.color = correct ? backgroundCols[2] : backgroundCols[3];
         borderRend.color = correct ? borderCols[2] : borderCols[3];
-        totalCorrectMesh.text = containedPlayer.points.ToString();
+        totalCorrectMesh.text = containedPlayer.bankedPoints.ToString();
     }
 
     public void SetLockedInColor()
     {
         backgroundRend.color = backgroundCols[4];
         borderRend.color = borderCols[4];
-        totalCorrectMesh.text = containedPlayer.points.ToString();
+        totalCorrectMesh.text = containedPlayer.bankedPoints.ToString();
     }
 
     public void MoveStrap(Vector3 targetPos, int i)

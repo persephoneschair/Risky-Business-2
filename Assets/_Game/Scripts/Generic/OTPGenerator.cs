@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 public static class OTPGenerator
 {
-    static char[] chars = "ABCDEFGHJKLMNPQRSTUVWXYZ".ToCharArray();
+    static char[] chars = "BCDFGHJKLMNPQRSTWXYZ".ToCharArray();
     private static List<string> usedCodes = new List<string>();
     private static int codeLength = 4;
 

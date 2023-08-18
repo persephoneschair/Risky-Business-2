@@ -8,6 +8,27 @@ using UnityEngine.UI;
 
 public class ClientMainGame : SingletonMonoBehaviour<ClientMainGame>
 {
+    [Header("Data Fields")]
+    public GameObject dataFieldsObj;
+    public TextMeshProUGUI nameMesh;
+    public ClientDataField banked;
+    public ClientDataField atRisk;
+    public ClientDataField potential;
+
+    [Header("Main Game Area")]
+    public Animator mainGameAreaAnim;
+    public Animator timerAppearanceAnim;
+
+    public Animator questionMetaDataAnim;
+    public TextMeshProUGUI questionMetaDataMesh;
+
+    public Animator questionStrapAnim;
+    public TextMeshProUGUI questionStrapMesh;
+
+    [Header("R1 Buttons")]
+    public AnswerButton[] r1AnswerButtons;
+    public AnswerDisplay[] r1AnswerDisplays;
+
     [Header("Leaderboard")]
     public ClientLeaderboardManager leaderboardManager;
 
@@ -23,9 +44,15 @@ public class ClientMainGame : SingletonMonoBehaviour<ClientMainGame>
             OnSubmitAnswer();*/
     }
 
-    public void Initialise()
+    public void Initialise(string[] data)
     {
+        leaderboardManager.gameObject.SetActive(true);
+        leaderboardManager.RefreshScrollRect();
 
+        dataFieldsObj.SetActive(true);
+        nameMesh.text = data[0];
+        banked.mesh.text = data[1];
+        atRisk.mesh.text = data[2];
     }
 
     public void DisplayCountdown()
@@ -38,9 +65,12 @@ public class ClientMainGame : SingletonMonoBehaviour<ClientMainGame>
 
     }
 
-    public void OnSubmitAnswer()
+    public void OnSubmitR1(int pressedOption)
     {
-        ClientManager.Get.SendPayloadToHost("ANSWER GOES HERE", EventLibrary.ClientEventType.Answer);
+        for(int i = 0; i < r1AnswerButtons.Length; i++)
+            r1AnswerButtons[i].PlayerHasAnswered(i == pressedOption);
+
+        ClientManager.Get.SendPayloadToHost("Get answer from index pushed and loaded question (which will be sent down in the payload)", EventLibrary.ClientEventType.Answer);
     }
 
     public void DisplayResponse(string[] data)
@@ -82,5 +112,19 @@ public class ClientMainGame : SingletonMonoBehaviour<ClientMainGame>
         fixedMessageObj.SetActive(true);
         fixedMessageMesh.text = "YOU ARE ATTEMPTING TO PLAY THE GAME USING THE WRONG CONTROLLER APP.\n\n" +
             "PLEASE CHECK THE GAME PAGE FOR THE CORRECT LINK TO THE CURRENT GAME.";
+    }
+
+    public void UpdateLeaderboard(string data)
+    {
+        string[] players = data.Split('¬');
+        for (int i = 0; i < players.Length; i++)
+        {
+            //[0] = Name
+            //[1] = Bank
+            //[2] = Risk
+            string[] splitData = players[i].Split('|');
+            leaderboardManager.PopulateStrap(splitData, i);
+        }
+        //leaderboardManager.RefreshScrollRect();
     }
 }

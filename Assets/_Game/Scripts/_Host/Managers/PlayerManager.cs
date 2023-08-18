@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class PlayerManager : SingletonMonoBehaviour<PlayerManager>
 {
-
     public List<PlayerObject> players = new List<PlayerObject>();
 
     [Header("Controls")]
@@ -30,7 +29,7 @@ public class PlayerManager : SingletonMonoBehaviour<PlayerManager>
                 wasCorrect = value.wasCorrect;
                 eliminated = value.eliminated;
 
-                points = value.points;
+                points = value.bankedPoints;
                 totalCorrect = value.totalCorrect;
                 submission = value.submission;
                 submissionTime = value.submissionTime;
@@ -103,7 +102,7 @@ public class PlayerManager : SingletonMonoBehaviour<PlayerManager>
 
     void SetDataBack()
     {
-        FocusPlayer.points = points;
+        FocusPlayer.bankedPoints = points;
         FocusPlayer.totalCorrect = totalCorrect;
         FocusPlayer.submission = submission;
         FocusPlayer.submissionTime = submissionTime;

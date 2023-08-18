@@ -258,6 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4eb5caef370380488780066ec3b4fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scrollRectContent: {fileID: 2270284165997493509}
   straps:
   - {fileID: 5405485506437194449}
   - {fileID: 3115474868622774242}

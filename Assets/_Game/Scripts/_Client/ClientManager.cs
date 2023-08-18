@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Control;
 using TMPro;
 using Newtonsoft.Json.Linq;
@@ -47,6 +48,10 @@ public class ClientManager : SingletonMonoBehaviour<ClientManager>
             case EventLibrary.HostEventType.Validated:
                 string[] dataArr = data.Split('|');
                 ClientLandingPageManager.Get.OnValidated(dataArr);
+                break;
+
+            case EventLibrary.HostEventType.Leaderboard:
+                ClientMainGame.Get.UpdateLeaderboard(data);
                 break;
 
             case EventLibrary.HostEventType.SecondInstance:

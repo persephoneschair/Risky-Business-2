@@ -18,7 +18,7 @@ public class BetterButton : MonoBehaviour
     #region Definitions
 
     [Header("Definitions")]
-    [HideInInspector] public ColorBlock[] colorBlocks;
+    public ColorBlock[] colorBlocks;
 
     private Sprite[] currentBorderSprites;
     [HideInInspector] public Sprite[] roundedBorderSprites;

@@ -27,7 +27,7 @@ public class AudiencePlayerEvent : LoggableEvent
     {
         twitchName = p.twitchName;
         playerName = p.playerName;
-        points = p.points;
+        points = p.bankedPoints;
     }
 
     #endregion

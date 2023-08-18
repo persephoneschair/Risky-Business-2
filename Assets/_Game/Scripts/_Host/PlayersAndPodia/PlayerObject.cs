@@ -21,7 +21,8 @@ public class PlayerObject
 
     public bool eliminated;
 
-    public int points;
+    public int bankedPoints;
+    public int riskPoints;
     public int totalCorrect;
     public string submission;
     public float submissionTime;
@@ -33,7 +34,7 @@ public class PlayerObject
         playerClientRef = pl;
         otp = OTPGenerator.GenerateOTP();
         playerName = name;
-        points = 0;
+        bankedPoints = 0;
         //podium = Podiums.GetPodiums.podia.FirstOrDefault(x => x.containedPlayer == null);
         //podium.containedPlayer = this;
     }
@@ -61,8 +62,8 @@ public class PlayerObject
             playerName = "";
 
             PlayerManager.Get.players.Remove(this);
-            HostManager.Get.SendPayloadToClient(oldPlayer, EventLibrary.HostEventType.Validated, $"{oldPlayer.playerName}|{oldPlayer.points.ToString()}");
-            //HostManager.Get.UpdateLeaderboards();
+            HostManager.Get.SendPayloadToClient(oldPlayer, EventLibrary.HostEventType.Validated, $"{oldPlayer.playerName}|{oldPlayer.bankedPoints.ToString()}");
+            HostManager.Get.UpdateClientLeaderboards();
             return;
         }
         otp = "";
@@ -76,10 +77,10 @@ public class PlayerObject
             //podium.InitialisePodium();
         else
         {
-            points = 0;
+            bankedPoints = 0;
             eliminated = true;
         }
-        HostManager.Get.SendPayloadToClient(this, EventLibrary.HostEventType.Validated, $"{playerName}|{points.ToString()}");
-        //HostManager.GetHost.UpdateLeaderboards();
+        HostManager.Get.SendPayloadToClient(this, EventLibrary.HostEventType.Validated, $"{playerName}|{bankedPoints.ToString()}|{riskPoints.ToString()}");
+        HostManager.Get.UpdateClientLeaderboards();
     }
 }

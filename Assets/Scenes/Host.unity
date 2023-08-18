@@ -302,9 +302,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testMode: 1
   skipOpeningTitles: 1
-  fastValidation: 0
+  fastValidation: 1
   recoveryMode: 0
-  playerLimit: 0
+  playerLimit: 40
   questionPack: {fileID: 0}
 --- !u!1 &93102326
 GameObject:
@@ -1215,6 +1215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   host: {fileID: 800084187}
+  gameName: RISKYBUSINESS
 --- !u!114 &800084187
 MonoBehaviour:
   m_ObjectHideFlags: 0

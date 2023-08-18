@@ -25,8 +25,8 @@ public class LeaderboardManager : SingletonMonoBehaviour<LeaderboardManager>
     [Button]
     public void ReorderBoard()
     {
-        straps = straps.OrderByDescending(x => x.containedPlayer != null).ThenByDescending(x => x.containedPlayer?.points).ThenBy(x => x.containedPlayer?.playerName).ToArray();
-        cloneStraps = cloneStraps.OrderByDescending(x => x.containedPlayer != null).ThenByDescending(x => x.containedPlayer?.points).ThenBy(x => x.containedPlayer?.playerName).ToArray();
+        straps = straps.OrderByDescending(x => x.containedPlayer != null).ThenByDescending(x => x.containedPlayer?.bankedPoints).ThenBy(x => x.containedPlayer?.playerName).ToArray();
+        cloneStraps = cloneStraps.OrderByDescending(x => x.containedPlayer != null).ThenByDescending(x => x.containedPlayer?.bankedPoints).ThenBy(x => x.containedPlayer?.playerName).ToArray();
         //Extensions.ShuffleParallel(straps, cloneStraps);
         for (int i = 0; i < straps.Length; i++)
         {

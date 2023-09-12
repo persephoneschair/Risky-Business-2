@@ -20,21 +20,30 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
 
     public void OnPlayerJoins(Player joinedPlayer)
     {
-        string[] name = joinedPlayer.Name.Split('¬');
+        if(joinedPlayer.Name.Contains('|'))
+        {
+            string[] name = joinedPlayer.Name.Split('|');
+            PlayerObject pla = new PlayerObject(joinedPlayer, name[0]);
+            pla.playerClientID = joinedPlayer.UserID;
+            PlayerManager.Get.pendingPlayers.Add(pla);
+            SendPayloadToClient(joinedPlayer, EventLibrary.HostEventType.Validate, $"{pla.otp}");
+            StartCoroutine(FastValidation(pla, name[1]));
+        }
+        /*string[] name = joinedPlayer.Name.Split('¬');
         if (name[1] != gameName)
         {
             SendPayloadToClient(joinedPlayer, EventLibrary.HostEventType.WrongApp, "");
             return;
-        }
+        }*/
 
         if (PlayerManager.Get.players.Count >= Operator.Get.playerLimit && Operator.Get.playerLimit != 0)
         {
             //Do something slightly better than this
             return;
         }
-        PlayerObject pl = new PlayerObject(joinedPlayer, name[0].Trim());
+        PlayerObject pl = new PlayerObject(joinedPlayer, joinedPlayer.Name);
         pl.playerClientID = joinedPlayer.UserID;
-        PlayerManager.Get.players.Add(pl);
+        PlayerManager.Get.pendingPlayers.Add(pl);
         
         if(Operator.Get.recoveryMode)
         {
@@ -49,7 +58,7 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
                 //pl.podium = null;
                 pl.playerClientRef = null;
                 pl.playerName = "";
-                PlayerManager.Get.players.Remove(pl);
+                PlayerManager.Get.pendingPlayers.Remove(pl);
                 DebugLog.Print($"{joinedPlayer.Name} HAS BEEN CLEARED", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Red);
                 return;
             }
@@ -57,14 +66,14 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
         else if (Operator.Get.fastValidation)
             StartCoroutine(FastValidation(pl));
 
-        DebugLog.Print($"{name[0].Trim()} HAS JOINED THE LOBBY", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Green);
+        DebugLog.Print($"{joinedPlayer.Name} HAS JOINED THE LOBBY", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Green);
         SendPayloadToClient(joinedPlayer, EventLibrary.HostEventType.Validate, $"{pl.otp}");
     }
 
-    private IEnumerator FastValidation(PlayerObject pl)
+    private IEnumerator FastValidation(PlayerObject pl, string overrideName = "")
     {
         yield return new WaitForSeconds(1f);
-        TwitchManager.Get.testUsername = pl.playerName;
+        TwitchManager.Get.testUsername = string.IsNullOrEmpty(overrideName) ? pl.playerName : overrideName;
         TwitchManager.Get.testMessage = pl.otp;
         TwitchManager.Get.SendTwitchWhisper();
         TwitchManager.Get.testUsername = "";
@@ -90,7 +99,7 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
     {
         host.UpdatePlayerData(pl, EventLibrary.GetHostEventTypeString(e), data);
     }
-    public void UpdateClientLeaderboards()
+    /*public void UpdateClientLeaderboards()
     {
         List<PlayerObject> lb = PlayerManager.Get.players.OrderByDescending(x => x.bankedPoints).ThenBy(x => x.playerName).ToList();
 
@@ -107,7 +116,7 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
 
         foreach (PlayerObject pl in lb)
             SendPayloadToClient(pl, EventLibrary.HostEventType.Leaderboard, payload);
-    }
+    }*/
 
     public void OnReceivePayloadFromClient(EventMessage e)
     {
@@ -119,7 +128,41 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
 
         switch (eventType)
         {
-            case EventLibrary.ClientEventType.Answer:
+            case EventLibrary.ClientEventType.StoredValidation:
+                string[] str = data.Split('|').ToArray();
+                TwitchManager.Get.testUsername = str[0];
+                TwitchManager.Get.testMessage = str[1];
+                TwitchManager.Get.SendTwitchWhisper();
+                TwitchManager.Get.testUsername = "";
+                TwitchManager.Get.testMessage = "";
+                break;
+
+            case EventLibrary.ClientEventType.SimpleQuestion:
+                break;
+
+            case EventLibrary.ClientEventType.MultipleChoiceQuestion:
+                if(QuestionManager.currentQuestionIndex % 4 == 3 && data == "RISK!" && GameplayManager.Get.currentRound == GameplayManager.Round.FavourableOdds)
+                {
+                    AudioManager.Get.Play(AudioManager.OneShotClip.Ding);
+                    p.chosenToRisk = true;
+                    SendPayloadToClient(p, EventLibrary.HostEventType.Information, "You're risking! Good luck!");
+                    p.strap.SetStrapColor(GlobalLeaderboardStrap.ColorOptions.LockedIn);
+                    p.cloneStrap.SetStrapColor(GlobalLeaderboardStrap.ColorOptions.LockedIn);
+                }                    
+                else
+                {
+                    Answer playedAnswer = GameplayManager.Get.rounds[(int)GameplayManager.Get.currentRound].currentQuestion.answers.FirstOrDefault(x => data == x.answer);
+                    p.attemptedQ = true;
+                    if (playedAnswer != null && playedAnswer.isCorrect)
+                        p.wasCorrect = true;
+                    p.HandlePlayerScoring();
+                }
+                break;
+
+            case EventLibrary.ClientEventType.MultiSelectQuestion:
+                p.HandlePlayerScoring(data.Split('|'));
+                SendPayloadToClient(p, EventLibrary.HostEventType.Information, "Answers received");
+                LeaderboardManager.Get.OrderByRiskPoints();
                 break;
 
             default:

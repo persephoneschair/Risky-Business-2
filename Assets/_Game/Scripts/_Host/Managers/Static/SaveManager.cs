@@ -24,8 +24,7 @@ public static class SaveManager
         GameplayDataSerializable gpd = new GameplayDataSerializable()
         {
             nextQuestionNumber = GameplayManager.nextQuestionIndex,
-            currentRound = GameplayManager.Get.currentRound,
-            roundsPlayed = GameplayManager.Get.roundsPlayed
+            currentRound = GameplayManager.Get.currentRound
         };
 
         var gameStateData = JsonConvert.SerializeObject(gpd);
@@ -84,7 +83,6 @@ public static class SaveManager
         {
             GameplayManager.nextQuestionIndex = gameplayData.nextQuestionNumber;
             GameplayManager.Get.currentRound = gameplayData.currentRound;
-            GameplayManager.Get.roundsPlayed = gameplayData.roundsPlayed;
         }
         Operator.Get.recoveryMode = false;
         HostManager.Get.host.ReloadHost = false;

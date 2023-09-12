@@ -7,17 +7,32 @@ using UnityEngine;
 public class RoundBase : MonoBehaviour
 {
     public Question currentQuestion = null;
-    public Animator questionLozengeAnim;
-    public TextMeshProUGUI questionMesh;
 
-    public virtual void LoadQuestion(int qNum)
+    public virtual void LoadQuestion()
     {
-        
+        if (QuestionManager.currentQuestionIndex == 0)
+        {
+            HostQuestionDisplay.Get.BringInBox();
+            HostQuestionDisplay.Get.BringInTimer();
+        }
+
+        currentQuestion = QuestionManager.GetQuestion();
+        currentQuestion.answers.Shuffle();
+        AudioManager.Get.Play(AudioManager.LoopClip.GameplayLoop);
+        StartCoroutine(LoadDisplays());
+    }
+
+    public virtual IEnumerator LoadDisplays()
+    {
+        RunQuestion();
+        yield return new WaitForSeconds(0f);
     }
 
     public virtual void RunQuestion()
     {
-        
+        AudioManager.Get.Play(AudioManager.OneShotClip.Ding);
+        HostQuestionDisplay.Get.StartTimer();
+        QuestionRunning();
     }
 
     public virtual void QuestionRunning()
@@ -27,32 +42,30 @@ public class RoundBase : MonoBehaviour
 
     public virtual void OnQuestionEnded()
     {
-        
-    }
-
-    public virtual void DisplayAnswer()
-    {
-                   
+        GameplayManager.Get.currentStage = GameplayManager.GameplayStage.ResetPostQuestion;
     }
 
     public virtual void ResetForNewQuestion()
     {
-        
-    }
-
-    public virtual void BespokeEndOfRoundLogic()
-    {
-
+        ResetPlayerVariables();
     }
 
     public virtual void ResetPlayerVariables()
     {
         foreach (PlayerObject po in PlayerManager.Get.players)
         {
-            po.submission = "";
-            po.submissionTime = 0;
-            po.flagForCondone = false;
             po.wasCorrect = false;
+            po.attemptedQ = false;
+            po.chosenToRisk = false;
+            po.strap.SetStrapColor(GlobalLeaderboardStrap.ColorOptions.Default);
+            po.cloneStrap.SetStrapColor(GlobalLeaderboardStrap.ColorOptions.Default);
         }
+    }
+
+    public virtual void EndOfRound()
+    {
+        AudioManager.Get.Play(AudioManager.LoopClip.WinTheme, false);
+        GameplayManager.Get.currentStage = GameplayManager.GameplayStage.RevealInstructions;
+        GameplayManager.Get.currentRound++;
     }
 }

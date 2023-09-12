@@ -1,0 +1,627 @@
+{
+  "author": "royal_flush",
+  "favourableOdds": [
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "Roger Federer",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rafael Nadal",
+          "isCorrect": true
+        },
+        {
+          "answer": "Novak Djokovic",
+          "isCorrect": true
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "Roger Federer",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rafael Nadal",
+          "isCorrect": true
+        },
+        {
+          "answer": "Frank Lampard",
+          "isCorrect": false
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "Roger Federer",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rory Kinnear",
+          "isCorrect": false
+        },
+        {
+          "answer": "Frank Lampard",
+          "isCorrect": false
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "David Tennant",
+          "isCorrect": false
+        },
+        {
+          "answer": "Rory Kinnear",
+          "isCorrect": false
+        },
+        {
+          "answer": "Frank Lampard",
+          "isCorrect": false
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "Roger Federer",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rafael Nadal",
+          "isCorrect": true
+        },
+        {
+          "answer": "Novak Djokovic",
+          "isCorrect": true
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "Roger Federer",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rafael Nadal",
+          "isCorrect": true
+        },
+        {
+          "answer": "Frank Lampard",
+          "isCorrect": false
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "Roger Federer",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rory Kinnear",
+          "isCorrect": false
+        },
+        {
+          "answer": "Frank Lampard",
+          "isCorrect": false
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "David Tennant",
+          "isCorrect": false
+        },
+        {
+          "answer": "Rory Kinnear",
+          "isCorrect": false
+        },
+        {
+          "answer": "Frank Lampard",
+          "isCorrect": false
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "Roger Federer",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rafael Nadal",
+          "isCorrect": true
+        },
+        {
+          "answer": "Novak Djokovic",
+          "isCorrect": true
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "Roger Federer",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rafael Nadal",
+          "isCorrect": true
+        },
+        {
+          "answer": "Frank Lampard",
+          "isCorrect": false
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "Roger Federer",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rory Kinnear",
+          "isCorrect": false
+        },
+        {
+          "answer": "Frank Lampard",
+          "isCorrect": false
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player",
+      "answers": [
+        {
+          "answer": "Tim Henman",
+          "isCorrect": true
+        },
+        {
+          "answer": "David Tennant",
+          "isCorrect": false
+        },
+        {
+          "answer": "Rory Kinnear",
+          "isCorrect": false
+        },
+        {
+          "answer": "Frank Lampard",
+          "isCorrect": false
+        },
+        {
+          "answer": "Theo Walcott",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "boardGame": [
+    {
+      "question": "Identify the colours",
+      "answers": [
+        {
+          "answer": "Red",
+          "isCorrect": true
+        },
+        {
+          "answer": "Green",
+          "isCorrect": true
+        },
+        {
+          "answer": "Yellow",
+          "isCorrect": true
+        },
+        {
+          "answer": "Brown",
+          "isCorrect": true
+        },
+        {
+          "answer": "Blue",
+          "isCorrect": true
+        },
+        {
+          "answer": "Toilet",
+          "isCorrect": false
+        },
+        {
+          "answer": "Banana",
+          "isCorrect": false
+        },
+        {
+          "answer": "Video",
+          "isCorrect": false
+        },
+        {
+          "answer": "C#",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Identify the animals",
+      "answers": [
+        {
+          "answer": "Dog",
+          "isCorrect": true
+        },
+        {
+          "answer": "Cat",
+          "isCorrect": true
+        },
+        {
+          "answer": "Monkey",
+          "isCorrect": true
+        },
+        {
+          "answer": "Fish",
+          "isCorrect": true
+        },
+        {
+          "answer": "Bird",
+          "isCorrect": true
+        },
+        {
+          "answer": "Worm",
+          "isCorrect": true
+        },
+        {
+          "answer": "Caterpillar",
+          "isCorrect": true
+        },
+        {
+          "answer": "Piano",
+          "isCorrect": false
+        },
+        {
+          "answer": "Stream Deck",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Identify the gemstones",
+      "answers": [
+        {
+          "answer": "Ruby",
+          "isCorrect": true
+        },
+        {
+          "answer": "Sapphire",
+          "isCorrect": true
+        },
+        {
+          "answer": "Emerald",
+          "isCorrect": true
+        },
+        {
+          "answer": "Diamond",
+          "isCorrect": true
+        },
+        {
+          "answer": "Monopoly",
+          "isCorrect": false
+        },
+        {
+          "answer": "Custard",
+          "isCorrect": false
+        },
+        {
+          "answer": "Pingu",
+          "isCorrect": false
+        },
+        {
+          "answer": "Car",
+          "isCorrect": false
+        },
+        {
+          "answer": "Acid",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "thisOrThat": [
+    {
+      "question": "What is true?",
+      "answers": [
+        {
+          "answer": "True",
+          "isCorrect": true
+        },
+        {
+          "answer": "False",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is up?",
+      "answers": [
+        {
+          "answer": "Up",
+          "isCorrect": true
+        },
+        {
+          "answer": "Down",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is left?",
+      "answers": [
+        {
+          "answer": "Left",
+          "isCorrect": true
+        },
+        {
+          "answer": "Right",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is black?",
+      "answers": [
+        {
+          "answer": "Black",
+          "isCorrect": true
+        },
+        {
+          "answer": "White",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is fruit?",
+      "answers": [
+        {
+          "answer": "Fruit",
+          "isCorrect": true
+        },
+        {
+          "answer": "Veg",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is muscle?",
+      "answers": [
+        {
+          "answer": "Muscle",
+          "isCorrect": true
+        },
+        {
+          "answer": "Fat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is love?",
+      "answers": [
+        {
+          "answer": "Baby don't hurt me...",
+          "isCorrect": true
+        },
+        {
+          "answer": "Got to do with it?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is fear?",
+      "answers": [
+        {
+          "answer": "Fear",
+          "isCorrect": true
+        },
+        {
+          "answer": "Hatred",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is London?",
+      "answers": [
+        {
+          "answer": "London",
+          "isCorrect": true
+        },
+        {
+          "answer": "Paris",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is gravity?",
+      "answers": [
+        {
+          "answer": "Gravity",
+          "isCorrect": true
+        },
+        {
+          "answer": "Friction",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is people?",
+      "answers": [
+        {
+          "answer": "People",
+          "isCorrect": true
+        },
+        {
+          "answer": "Animals",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is stolen?",
+      "answers": [
+        {
+          "answer": "Stolen",
+          "isCorrect": true
+        },
+        {
+          "answer": "Lost",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is happy?",
+      "answers": [
+        {
+          "answer": "Happy",
+          "isCorrect": true
+        },
+        {
+          "answer": "Sad",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is tea?",
+      "answers": [
+        {
+          "answer": "Tea",
+          "isCorrect": true
+        },
+        {
+          "answer": "Coffee",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is laptop?",
+      "answers": [
+        {
+          "answer": "Laptop",
+          "isCorrect": true
+        },
+        {
+          "answer": "Tablet",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

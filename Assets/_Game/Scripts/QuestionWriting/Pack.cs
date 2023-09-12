@@ -6,8 +6,7 @@ using Newtonsoft.Json;
 public class Pack
 {
     public string author;
-    public List<Question> r1Questions = new List<Question>();
-    public List<Question> r2Questions = new List<Question>();
-    public List<Question> r3Questions = new List<Question>();
-    public List<Question> r4Questions = new List<Question>();
+    public List<Question> favourableOdds = new List<Question>();
+    public List<Question> boardGame = new List<Question>();
+    public List<Question> thisOrThat = new List<Question>();
 }

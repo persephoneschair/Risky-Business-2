@@ -1,0 +1,627 @@
+{
+  "author": "royal_flush",
+  "favourableOdds": [
+    {
+      "question": "Name a musician who has been the subject of a cinematically released biopic",
+      "answers": [
+        {
+          "answer": "Ray Charles",
+          "isCorrect": true
+        },
+        {
+          "answer": "Elton John",
+          "isCorrect": true
+        },
+        {
+          "answer": "Johnny Cash",
+          "isCorrect": true
+        },
+        {
+          "answer": "Tina Turner",
+          "isCorrect": true
+        },
+        {
+          "answer": "Leonard Bernstein",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a country that borders Algeria",
+      "answers": [
+        {
+          "answer": "Mauritania",
+          "isCorrect": true
+        },
+        {
+          "answer": "Libya",
+          "isCorrect": true
+        },
+        {
+          "answer": "Morocco",
+          "isCorrect": true
+        },
+        {
+          "answer": "Sudan",
+          "isCorrect": false
+        },
+        {
+          "answer": "Egypt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a tennis player who has won all four Grand Slams",
+      "answers": [
+        {
+          "answer": "Andre Agassi",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rafael Nadal",
+          "isCorrect": true
+        },
+        {
+          "answer": "Pete Sampras",
+          "isCorrect": false
+        },
+        {
+          "answer": "Ivan Lendl",
+          "isCorrect": false
+        },
+        {
+          "answer": "Andy Murray",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a video game protagonist",
+      "answers": [
+        {
+          "answer": "Ezio Auditore da Firenze",
+          "isCorrect": true
+        },
+        {
+          "answer": "Andrew Ryan",
+          "isCorrect": false
+        },
+        {
+          "answer": "Lady Dimitrescu",
+          "isCorrect": false
+        },
+        {
+          "answer": "Alexander of Brennenburg",
+          "isCorrect": false
+        },
+        {
+          "answer": "Vaas Montenegro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a herb",
+      "answers": [
+        {
+          "answer": "Parsley",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rosemary",
+          "isCorrect": true
+        },
+        {
+          "answer": "Oregano",
+          "isCorrect": true
+        },
+        {
+          "answer": "Basil",
+          "isCorrect": true
+        },
+        {
+          "answer": "Cardamom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a poker hand that is better than a straight",
+      "answers": [
+        {
+          "answer": "Flush",
+          "isCorrect": true
+        },
+        {
+          "answer": "Full house",
+          "isCorrect": true
+        },
+        {
+          "answer": "Quads",
+          "isCorrect": true
+        },
+        {
+          "answer": "Trips",
+          "isCorrect": false
+        },
+        {
+          "answer": "Two pair",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a composer who completed exactly nine symphonies",
+      "answers": [
+        {
+          "answer": "Gustav Mahler",
+          "isCorrect": true
+        },
+        {
+          "answer": "Ralph Vaughan Williams",
+          "isCorrect": true
+        },
+        {
+          "answer": "Dmitri Shostakovich",
+          "isCorrect": false
+        },
+        {
+          "answer": "Joseph Haydn",
+          "isCorrect": false
+        },
+        {
+          "answer": "Claude Debussy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a character listed on the dramatis personae of Shakespeare's Othello",
+      "answers": [
+        {
+          "answer": "Roderigo",
+          "isCorrect": true
+        },
+        {
+          "answer": "Bernardo",
+          "isCorrect": false
+        },
+        {
+          "answer": "Mercutio",
+          "isCorrect": false
+        },
+        {
+          "answer": "Banquo",
+          "isCorrect": false
+        },
+        {
+          "answer": "Gratiano",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a religion with more than five million adherents",
+      "answers": [
+        {
+          "answer": "Islam",
+          "isCorrect": true
+        },
+        {
+          "answer": "Buddhism",
+          "isCorrect": true
+        },
+        {
+          "answer": "Sikhism",
+          "isCorrect": true
+        },
+        {
+          "answer": "Judaism",
+          "isCorrect": true
+        },
+        {
+          "answer": "Shinto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a Pokémon first introduced in Gen II",
+      "answers": [
+        {
+          "answer": "Mareep",
+          "isCorrect": true
+        },
+        {
+          "answer": "Slowking",
+          "isCorrect": true
+        },
+        {
+          "answer": "Entei",
+          "isCorrect": true
+        },
+        {
+          "answer": "Groudon",
+          "isCorrect": false
+        },
+        {
+          "answer": "Meowth",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a FTSE 100 company",
+      "answers": [
+        {
+          "answer": "Barclays",
+          "isCorrect": true
+        },
+        {
+          "answer": "Vodafone Group",
+          "isCorrect": true
+        },
+        {
+          "answer": "Subway",
+          "isCorrect": false
+        },
+        {
+          "answer": "Marks & Spencer",
+          "isCorrect": false
+        },
+        {
+          "answer": "IBM",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name an original Monopoly token",
+      "answers": [
+        {
+          "answer": "Rocking horse",
+          "isCorrect": true
+        },
+        {
+          "answer": "Sack of money",
+          "isCorrect": false
+        },
+        {
+          "answer": "Scottie dog",
+          "isCorrect": false
+        },
+        {
+          "answer": "Cat",
+          "isCorrect": false
+        },
+        {
+          "answer": "Wheelbarrow",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "boardGame": [
+    {
+      "question": "Identify the UK county towns",
+      "answers": [
+        {
+          "answer": "Winchester (Hampshire)",
+          "isCorrect": true
+        },
+        {
+          "answer": "Lewes (East Sussex)",
+          "isCorrect": true
+        },
+        {
+          "answer": "Norwich (Norfolk)",
+          "isCorrect": true
+        },
+        {
+          "answer": "Preston (Lancashire)",
+          "isCorrect": true
+        },
+        {
+          "answer": "Truro (Cornwall)",
+          "isCorrect": true
+        },
+        {
+          "answer": "Reading (Berkshire)",
+          "isCorrect": true
+        },
+        {
+          "answer": "Worthing (West Sussex)",
+          "isCorrect": false
+        },
+        {
+          "answer": "Salisbury (Wiltshire)",
+          "isCorrect": false
+        },
+        {
+          "answer": "Tamworth (Staffordshire)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Identify the countries who won the men's World Cup in the same year that they hosted it",
+      "answers": [
+        {
+          "answer": "Uruguay",
+          "isCorrect": true
+        },
+        {
+          "answer": "Italy",
+          "isCorrect": true
+        },
+        {
+          "answer": "England",
+          "isCorrect": true
+        },
+        {
+          "answer": "West Germany",
+          "isCorrect": true
+        },
+        {
+          "answer": "France",
+          "isCorrect": true
+        },
+        {
+          "answer": "Argentina",
+          "isCorrect": true
+        },
+        {
+          "answer": "Spain",
+          "isCorrect": false
+        },
+        {
+          "answer": "Brazil",
+          "isCorrect": false
+        },
+        {
+          "answer": "The Netherlands",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Identify the Republican US Presidents",
+      "answers": [
+        {
+          "answer": "Donald J. Trump",
+          "isCorrect": true
+        },
+        {
+          "answer": "Gerald Ford",
+          "isCorrect": true
+        },
+        {
+          "answer": "Richard Nixon",
+          "isCorrect": true
+        },
+        {
+          "answer": "Herbert Hoover",
+          "isCorrect": true
+        },
+        {
+          "answer": "William Howard Taft",
+          "isCorrect": true
+        },
+        {
+          "answer": "Jimmy Carter",
+          "isCorrect": false
+        },
+        {
+          "answer": "Lyndon B. Johnson",
+          "isCorrect": false
+        },
+        {
+          "answer": "Grover Cleveland",
+          "isCorrect": false
+        },
+        {
+          "answer": "James Buchanan",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "thisOrThat": [
+    {
+      "question": "Who is 35?",
+      "answers": [
+        {
+          "answer": "royal_flu$h",
+          "isCorrect": true
+        },
+        {
+          "answer": "mrs_flu$h",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Which is a Game Night meme?",
+      "answers": [
+        {
+          "answer": "Edinburgh?",
+          "isCorrect": true
+        },
+        {
+          "answer": "Glasgow?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is love?",
+      "answers": [
+        {
+          "answer": "...baby don't hurt me",
+          "isCorrect": true
+        },
+        {
+          "answer": "...got to do with it?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Who is John Galt?",
+      "answers": [
+        {
+          "answer": "Atlas Shrugged",
+          "isCorrect": true
+        },
+        {
+          "answer": "Ulysses",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "My name is Elder Price",
+      "answers": [
+        {
+          "answer": "Hello!",
+          "isCorrect": true
+        },
+        {
+          "answer": "Goodbye!",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Which Gospel is synoptic?",
+      "answers": [
+        {
+          "answer": "Matthew",
+          "isCorrect": true
+        },
+        {
+          "answer": "John",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Who won Love Island more recently?",
+      "answers": [
+        {
+          "answer": "Sammy & Jess",
+          "isCorrect": true
+        },
+        {
+          "answer": "Jack & Dani",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Which London borough is larger (by area)?",
+      "answers": [
+        {
+          "answer": "Croydon",
+          "isCorrect": true
+        },
+        {
+          "answer": "Ealing",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Which are you more likely to hear at a 'SpyParty'?",
+      "answers": [
+        {
+          "answer": "Banana Bread",
+          "isCorrect": true
+        },
+        {
+          "answer": "Carrot Cake",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Who had more (legitimate) issue?",
+      "answers": [
+        {
+          "answer": "Charles I",
+          "isCorrect": true
+        },
+        {
+          "answer": "Henry VIII",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Which gestation period is longer on average?",
+      "answers": [
+        {
+          "answer": "Horse",
+          "isCorrect": true
+        },
+        {
+          "answer": "Sheep",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Which is a Black Mirror episode?",
+      "answers": [
+        {
+          "answer": "Men Against Fire",
+          "isCorrect": true
+        },
+        {
+          "answer": "Man On Fire",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "To which major film family is Nicholas Cage directly related?",
+      "answers": [
+        {
+          "answer": "Coppola",
+          "isCorrect": true
+        },
+        {
+          "answer": "Brando",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Which is functionally extinct?",
+      "answers": [
+        {
+          "answer": "Northern white rhino",
+          "isCorrect": true
+        },
+        {
+          "answer": "Southern white rhino",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Who is older?",
+      "answers": [
+        {
+          "answer": "at_bash",
+          "isCorrect": true
+        },
+        {
+          "answer": "royal_flu$h",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

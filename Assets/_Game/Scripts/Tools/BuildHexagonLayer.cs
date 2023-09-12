@@ -1,8 +1,9 @@
+using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BuildHexagonLayer : MonoBehaviour
+public class BuildHexagonLayer : SingletonMonoBehaviour<BuildHexagonLayer>
 {
     private const float sq3 = 1.7320508075688772935274463415059f;
     private float hexSideMultiplier = 1;
@@ -10,8 +11,13 @@ public class BuildHexagonLayer : MonoBehaviour
     public GameObject tile;
     public uint radius;
 
+    public enum HexColor { Blue, Cyan, Green, Orange, Red, Black };
     public List<Renderer> hexRends = new List<Renderer>();
     public Material[] hexMats;
+
+    public int danceIterations = 10;
+    public float danceSwitchDuration = 1f;
+    [Range(0, 10)] public int densityOfBlackOnDance = 6;
 
     void Start()
     {
@@ -65,7 +71,68 @@ public class BuildHexagonLayer : MonoBehaviour
             }
         }
         this.gameObject.transform.localEulerAngles = new Vector3(-90f, 0, 0);
+        SetHexesToRandomLit();
+    }
+
+    public void SetHexesToOff()
+    {
         foreach (Renderer r in hexRends)
-            r.material = hexMats[UnityEngine.Random.Range(0, hexMats.Length)];
+            r.material = hexMats[(int)HexColor.Black];
+    }
+
+    public void SetHexesToRandomLit()
+    {
+        foreach (Renderer r in hexRends)
+        {
+            int index = UnityEngine.Random.Range((int)HexColor.Blue, (int)HexColor.Black);
+            r.material = hexMats[index];
+        }
+    }
+    public void SetHexesToRandomLitWithBlack()
+    {
+        foreach (Renderer r in hexRends)
+        {
+            int index = UnityEngine.Random.Range((int)HexColor.Blue, (int)HexColor.Black);
+            if (densityOfBlackOnDance != 0 && UnityEngine.Random.Range(0,densityOfBlackOnDance) != 0)
+                index = (int)HexColor.Black;
+            r.material = hexMats[index];
+        }
+    }
+
+    [Button]
+    public void SetHexesToDance()
+    {
+        StartCoroutine(DanceRoutine());
+    }
+
+    public void SetHexesToDance(int iterations, float switchDuration)
+    {
+        danceIterations = iterations;
+        danceSwitchDuration = switchDuration;
+        SetHexesToDance();
+    }
+
+    IEnumerator DanceRoutine()
+    {
+        for (int i = 0; i < danceIterations; i++)
+        {
+            SetHexesToRandomLitWithBlack();
+            yield return new WaitForSeconds(danceSwitchDuration);
+        }
+        SetHexesToOff();
+    }
+
+    public void SpiralToColor()
+    {
+        StartCoroutine(SpiralRoutine());
+    }
+
+    IEnumerator SpiralRoutine()
+    {
+        foreach (Renderer r in hexRends)
+        {
+            yield return new WaitForSeconds(0.005f);
+            r.material = hexMats[UnityEngine.Random.Range((int)HexColor.Blue, (int)HexColor.Black)];
+        }
     }
 }

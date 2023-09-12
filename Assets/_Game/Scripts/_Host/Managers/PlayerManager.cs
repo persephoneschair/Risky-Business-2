@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerManager : SingletonMonoBehaviour<PlayerManager>
 {
+    public List<PlayerObject> pendingPlayers = new List<PlayerObject>();
     public List<PlayerObject> players = new List<PlayerObject>();
 
     [Header("Controls")]
@@ -25,14 +26,11 @@ public class PlayerManager : SingletonMonoBehaviour<PlayerManager>
                 playerName = value.playerName;
                 twitchName = value.twitchName;
                 profileImage = value.profileImage;
-                flagForCondone = value.flagForCondone;
                 wasCorrect = value.wasCorrect;
                 eliminated = value.eliminated;
 
                 points = value.bankedPoints;
                 totalCorrect = value.totalCorrect;
-                submission = value.submission;
-                submissionTime = value.submissionTime;
             }
             else
             {
@@ -47,8 +45,6 @@ public class PlayerManager : SingletonMonoBehaviour<PlayerManager>
                 totalCorrect = 0;
                 currentBid = 0;
                 maxPoints = 0;
-                submission = "OUT OF RANGE";
-                submissionTime = 0;
             }                
         }
     }
@@ -66,8 +62,6 @@ public class PlayerManager : SingletonMonoBehaviour<PlayerManager>
     public int totalCorrect;
     public int currentBid;
     public int maxPoints;
-    public string submission;
-    public float submissionTime;
 
     void UpdateDetails()
     {
@@ -104,8 +98,6 @@ public class PlayerManager : SingletonMonoBehaviour<PlayerManager>
     {
         FocusPlayer.bankedPoints = points;
         FocusPlayer.totalCorrect = totalCorrect;
-        FocusPlayer.submission = submission;
-        FocusPlayer.submissionTime = submissionTime;
         pullingData = true;
     }
 }

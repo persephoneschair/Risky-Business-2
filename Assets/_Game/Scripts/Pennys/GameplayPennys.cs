@@ -9,20 +9,8 @@ using NaughtyAttributes;
 using System.Linq;
 using TMPro;
 
-public class GameplayPennys : MonoBehaviour
+public class GameplayPennys : SingletonMonoBehaviour<GameplayPennys>
 {
-    #region Init
-
-    public static GameplayPennys GetPennys { get; private set; }
-    private void Awake()
-    {
-        if (GetPennys != null && GetPennys != this)
-            Destroy(this);
-        else
-            GetPennys = this;
-    }
-
-    #endregion
 
     private PlayerShell playerList;
     private MedalTableObject medalList;
@@ -30,7 +18,7 @@ public class GameplayPennys : MonoBehaviour
     private readonly string path = @"D:\Unity Projects\HerokuPennyData\PennyStorage";
 
     public int authorPennys;
-    [Range (1, 10)] public int multiplyFactor;
+    [Range (1, 20)] public int multiplyFactor;
     public string gameName;
 
 
@@ -60,7 +48,7 @@ public class GameplayPennys : MonoBehaviour
 
     private void AwardPennys()
     {
-        List<PlayerObject> list = PlayerManager.Get.players.OrderByDescending(p => p.totalCorrect).ThenBy(p => p.twitchName).Where(x => x.bankedPoints > 0).ToList();
+        List<PlayerObject> list = PlayerManager.Get.players.OrderBy(p => p.twitchName).Where(x => x.bankedPoints > 0).ToList();
         PlayerPennyData ppd;
 
         LoadJSON();
@@ -71,8 +59,8 @@ public class GameplayPennys : MonoBehaviour
                 CreateNewPlayer(p);
             else
             {
-                ppd.CurrentSeasonPennys += (p.totalCorrect * multiplyFactor);
-                ppd.AllTimePennys += (p.totalCorrect * multiplyFactor);
+                ppd.CurrentSeasonPennys += (p.bankedPoints * multiplyFactor);
+                ppd.AllTimePennys += (p.bankedPoints * multiplyFactor);
             }
         }
 
@@ -90,18 +78,42 @@ public class GameplayPennys : MonoBehaviour
 
     private void AwardMedals()
     {
-        List<PlayerObject> topTwo = PlayerManager.Get.players.Where(x => !x.eliminated).OrderByDescending(x => x.bankedPoints).ToList();
+        List<PlayerObject> orderedByPoints = PlayerManager.Get.players.OrderByDescending(x => x.bankedPoints).ThenBy(x => x.twitchName).ToList();
         LoadMedalJSON();
+        int medalToAward = 0;
 
-        if(topTwo.Count == 2)
+        for(int i = 0; i < orderedByPoints.Count; i++)
         {
-            medalList.goldMedallists.Add(topTwo[0].twitchName.ToLowerInvariant());
-            medalList.silverMedallists.Add(topTwo[1].twitchName.ToLowerInvariant());
-        }
+            if (i == 0)
+                medalList.goldMedallists.Add(orderedByPoints[i].twitchName);
 
-        List<PlayerObject> lobbyOrdered = PlayerManager.Get.players.Where(x => x.eliminated).OrderByDescending(x => x.totalCorrect).ToList();
-        foreach(PlayerObject player in lobbyOrdered.Where(x => x.totalCorrect == lobbyOrdered[0].totalCorrect))
-            medalList.lobbyMedallists.Add(player.twitchName.ToLowerInvariant());
+            else
+            {
+                if (orderedByPoints[i].bankedPoints != orderedByPoints[i - 1].bankedPoints)
+                    medalToAward++;
+
+                if (medalToAward == 3)
+                    break;
+
+                else
+                {
+                    switch(medalToAward)
+                    {
+                        case 0:
+                            medalList.goldMedallists.Add(orderedByPoints[i].twitchName);
+                            break;
+
+                        case 1:
+                            medalList.silverMedallists.Add(orderedByPoints[i].twitchName);
+                            break;
+
+                        case 2:
+                            medalList.bronzeMedallists.Add(orderedByPoints[i].twitchName);
+                            break;
+                    }
+                }
+            }
+        }
     }
 
     private void CreateNewPlayer(PlayerObject p)
@@ -109,8 +121,8 @@ public class GameplayPennys : MonoBehaviour
         PlayerPennyData newP = new PlayerPennyData()
         {
             PlayerName = p.twitchName.ToLowerInvariant(),
-            CurrentSeasonPennys = (p.totalCorrect * multiplyFactor),
-            AllTimePennys = (p.totalCorrect * multiplyFactor)
+            CurrentSeasonPennys = (p.bankedPoints * multiplyFactor),
+            AllTimePennys = (p.bankedPoints * multiplyFactor)
         };
         playerList.playerList.Add(newP);
     }
@@ -137,7 +149,6 @@ public class GameplayPennys : MonoBehaviour
 
         if (!string.IsNullOrEmpty(gameName))
         {
-            medalPath = path + $@"\{gameName}Test.txt";
             newDataContent = JsonConvert.SerializeObject(medalList);
             File.WriteAllText(medalPath, newDataContent);
         }

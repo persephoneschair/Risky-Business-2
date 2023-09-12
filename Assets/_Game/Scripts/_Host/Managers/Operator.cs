@@ -53,7 +53,6 @@ public class Operator : SingletonMonoBehaviour<Operator>
             GameplayManager.Get.ProgressGameplay();
     }
 
-    [Button]
     public void Save()
     {
         SaveManager.BackUpData();

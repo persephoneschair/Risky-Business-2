@@ -11,10 +11,10 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
 
     private bool playedUnique;
 
-    public enum OneShotClip { Impact, PodiumAnim, ClockTick, PlayerAnswer, WrongInFinal, ClockArm, Rotation, QStartAndEnd, PointTick };
+    public enum OneShotClip { Boing, Ding, Noooo, Pop1, Pop2, Pop3, Pop4, Tick, TimeBell, Wheee };
     public AudioClip[] stings;
 
-    public enum LoopClip { Titles, GameplayLoop, WinTheme, Credits };
+    public enum LoopClip { Titles, GameplayLoop, WinTheme, Credits, RoundIntro, R1Timer, R2Timer, R3Timer };
     public AudioClip[] loops;
 
     #region Public Methods
@@ -25,6 +25,11 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
             StartCoroutine(Delay(oneShot, delay));
         else
             oneShotSource.PlayOneShot(stings[(int)oneShot]);
+    }
+
+    public void PlayPop()
+    {
+        oneShotSource.PlayOneShot(stings[UnityEngine.Random.Range(3, 7)]);
     }
 
     public void PlayUnique(OneShotClip unique)

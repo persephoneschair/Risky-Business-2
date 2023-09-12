@@ -70,7 +70,7 @@ public class ClientMainGame : SingletonMonoBehaviour<ClientMainGame>
         for(int i = 0; i < r1AnswerButtons.Length; i++)
             r1AnswerButtons[i].PlayerHasAnswered(i == pressedOption);
 
-        ClientManager.Get.SendPayloadToHost("Get answer from index pushed and loaded question (which will be sent down in the payload)", EventLibrary.ClientEventType.Answer);
+        //ClientManager.Get.SendPayloadToHost("Get answer from index pushed and loaded question (which will be sent down in the payload)", EventLibrary.ClientEventType.Answer);
     }
 
     public void DisplayResponse(string[] data)

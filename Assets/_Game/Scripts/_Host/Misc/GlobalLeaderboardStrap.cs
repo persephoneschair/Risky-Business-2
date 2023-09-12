@@ -11,7 +11,8 @@ public class GlobalLeaderboardStrap : MonoBehaviour
     public PlayerObject containedPlayer;
 
     public TextMeshProUGUI playerNameMesh;
-    public TextMeshProUGUI totalCorrectMesh;
+    public TextMeshProUGUI bankedMesh;
+    public TextMeshProUGUI riskMesh;
     public RawImage avatarRend;
 
     public Image borderRend;
@@ -19,6 +20,7 @@ public class GlobalLeaderboardStrap : MonoBehaviour
 
     public Color[] borderCols;
     public Color[] backgroundCols;
+    public enum ColorOptions { Default, LockedIn, Correct, Incorrect };
 
     private Vector3 targetPosition;
     private float elapsedTime = 0;
@@ -28,7 +30,8 @@ public class GlobalLeaderboardStrap : MonoBehaviour
         startPos = GetComponent<RectTransform>().localPosition;
         targetPosition = startPos;
         playerNameMesh.text = "";
-        totalCorrectMesh.text = "";
+        bankedMesh.text = "";
+        riskMesh.text = "";
         gameObject.SetActive(false);
     }
 
@@ -39,32 +42,18 @@ public class GlobalLeaderboardStrap : MonoBehaviour
         containedPlayer = pl;
         playerNameMesh.text = pl.playerName;
         avatarRend.texture = pl.profileImage;
-        totalCorrectMesh.text = pl.bankedPoints.ToString();
+        bankedMesh.text = pl.bankedPoints.ToString();
+        riskMesh.text = pl.riskPoints.ToString();
         if (!isClone)
             pl.strap = this;
         else
             pl.cloneStrap = this;
     }
 
-    public void SetBackgroundColor(bool hotseat)
+    public void SetStrapColor(ColorOptions color)
     {
-        backgroundRend.color = hotseat ? backgroundCols[0] : backgroundCols[1];
-        borderRend.color = hotseat ? borderCols[0] : borderCols[1];
-        totalCorrectMesh.text = containedPlayer.bankedPoints.ToString();
-    }
-
-    public void SetCorrectOrIncorrectColor(bool correct)
-    {
-        backgroundRend.color = correct ? backgroundCols[2] : backgroundCols[3];
-        borderRend.color = correct ? borderCols[2] : borderCols[3];
-        totalCorrectMesh.text = containedPlayer.bankedPoints.ToString();
-    }
-
-    public void SetLockedInColor()
-    {
-        backgroundRend.color = backgroundCols[4];
-        borderRend.color = borderCols[4];
-        totalCorrectMesh.text = containedPlayer.bankedPoints.ToString();
+        backgroundRend.color = backgroundCols[(int)color];
+        borderRend.color = borderCols[(int)color];
     }
 
     public void MoveStrap(Vector3 targetPos, int i)
@@ -84,5 +73,25 @@ public class GlobalLeaderboardStrap : MonoBehaviour
         elapsedTime += Time.deltaTime * 1f;
         float percentageComplete = elapsedTime / LeaderboardManager.Get.reorderDuration;
         this.gameObject.transform.localPosition = Vector3.Lerp(this.gameObject.transform.localPosition, targetPosition, Mathf.SmoothStep(0, 1, percentageComplete));
+    }
+
+    public void SetStrapScore(int startValue, int endValue, bool isBank)
+    {
+        if (startValue == endValue)
+            return;
+        StartCoroutine(StrapTick(startValue, endValue, isBank));
+    }
+
+    IEnumerator StrapTick(int startValue, int endValue, bool isBank)
+    {
+        TextMeshProUGUI mesh = isBank ? bankedMesh : riskMesh;
+        int iterateValue = endValue >= startValue ? 1 : -1;
+
+        while(startValue != endValue)
+        {
+            startValue += iterateValue;
+            mesh.text = startValue.ToString();
+            yield return new WaitForSeconds(0.05f);
+        }
     }
 }

@@ -49,4 +49,39 @@ public static class QuestionManager
                 return null;
         }
     }
+
+    public static string ConvertLegacyPack(TextAsset tx, string author)
+    {
+        currentPack = new Pack();
+        currentPack.author = author;
+        List<LegacyQuestion> legacyQs = JsonConvert.DeserializeObject<List<LegacyQuestion>>(tx.ToString());
+        int counter = 0;
+        foreach(LegacyQuestion lq in legacyQs)
+        {
+            Question q = new Question();
+            q.question = lq.question;
+            foreach(string a in lq.correctAnswers)
+            {
+                Answer ans = new Answer();
+                ans.answer = a;
+                ans.isCorrect = true;
+                q.answers.Add(ans);
+            }
+            foreach(string a in lq.incorrectAnswers)
+            {
+                Answer ans = new Answer();
+                ans.answer = a;
+                ans.isCorrect = false;
+                q.answers.Add(ans);
+            }
+            if (counter < 12)
+                currentPack.favourableOdds.Add(q);
+            else if (counter < 15)
+                currentPack.boardGame.Add(q);
+            else
+                currentPack.thisOrThat.Add(q);
+            counter++;
+        }
+        return JsonConvert.SerializeObject(currentPack, Formatting.Indented);
+    }
 }

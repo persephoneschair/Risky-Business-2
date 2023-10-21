@@ -80,6 +80,8 @@ public class FavourableOdds : RoundBase
 
         foreach (PlayerObject pl in PlayerManager.Get.players.Where(x => x.wasCorrect))
             HostManager.Get.SendPayloadToClient(pl, EventLibrary.HostEventType.SingleAndMultiResult, $"The correct {wereOrWas} {string.Join(", ", currentQuestion.answers.Where(x => x.isCorrect).Select(x => x.answer).ToArray())}|CORRECT");
+        foreach (PlayerObject pl in PlayerManager.Get.players.Where(x => !x.attemptedQ))
+            HostManager.Get.SendPayloadToClient(pl, EventLibrary.HostEventType.SingleAndMultiResult, $"The correct {wereOrWas} {string.Join(", ", currentQuestion.answers.Where(x => x.isCorrect).Select(x => x.answer).ToArray())}|DEFAULT");
         foreach (PlayerObject pl in PlayerManager.Get.players.Where(x => !x.wasCorrect))
             HostManager.Get.SendPayloadToClient(pl, EventLibrary.HostEventType.SingleAndMultiResult, $"The correct {wereOrWas} {string.Join(", ", currentQuestion.answers.Where(x => x.isCorrect).Select(x => x.answer).ToArray())}|INCORRECT");
 

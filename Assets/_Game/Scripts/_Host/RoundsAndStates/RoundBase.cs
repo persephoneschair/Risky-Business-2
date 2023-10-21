@@ -17,7 +17,12 @@ public class RoundBase : MonoBehaviour
         }
 
         currentQuestion = QuestionManager.GetQuestion();
-        currentQuestion.answers.Shuffle();
+
+        if (Operator.Get.specialArunModeForR3 && GameplayManager.Get.currentRound == GameplayManager.Round.ThisOrThat)
+            currentQuestion.answers = currentQuestion.answers.OrderBy(x => x.answer).ToList();
+        else
+            currentQuestion.answers.Shuffle();
+
         AudioManager.Get.Play(AudioManager.LoopClip.GameplayLoop);
         StartCoroutine(LoadDisplays());
     }

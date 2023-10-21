@@ -1,0 +1,627 @@
+{
+  "author": "arunaromatics",
+  "favourableOdds": [
+    {
+      "question": "Name a word that appears in the title of a novel by Charles Dickens",
+      "answers": [
+        {
+          "answer": "David",
+          "isCorrect": true
+        },
+        {
+          "answer": "Martin",
+          "isCorrect": true
+        },
+        {
+          "answer": "Oliver",
+          "isCorrect": true
+        },
+        {
+          "answer": "Nicholas",
+          "isCorrect": true
+        },
+        {
+          "answer": "Joseph",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name an app that is currently operated by Meta",
+      "answers": [
+        {
+          "answer": "Messenger",
+          "isCorrect": true
+        },
+        {
+          "answer": "WhatsApp",
+          "isCorrect": true
+        },
+        {
+          "answer": "Threads",
+          "isCorrect": true
+        },
+        {
+          "answer": "Snapchat",
+          "isCorrect": false
+        },
+        {
+          "answer": "Zoom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a country that was a full member of the UN in the year 2000",
+      "answers": [
+        {
+          "answer": "Swaziland",
+          "isCorrect": true
+        },
+        {
+          "answer": "Myanmar",
+          "isCorrect": true
+        },
+        {
+          "answer": "East Timor",
+          "isCorrect": false
+        },
+        {
+          "answer": "Montenegro",
+          "isCorrect": false
+        },
+        {
+          "answer": "Switzerland",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name an actor who has competed at a Commonwealth Games",
+      "answers": [
+        {
+          "answer": "Jason Statham",
+          "isCorrect": true
+        },
+        {
+          "answer": "Idris Elba",
+          "isCorrect": false
+        },
+        {
+          "answer": "Gerard Butler",
+          "isCorrect": false
+        },
+        {
+          "answer": "Sean Connery",
+          "isCorrect": false
+        },
+        {
+          "answer": "Liam Neeson",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a composer who was alive during the 20th century",
+      "answers": [
+        {
+          "answer": "Igor Stravinsky",
+          "isCorrect": true
+        },
+        {
+          "answer": "Sergei Rachmaninoff",
+          "isCorrect": true
+        },
+        {
+          "answer": "Dmitri Shostakovich ",
+          "isCorrect": true
+        },
+        {
+          "answer": "Sergei Prokofiev ",
+          "isCorrect": true
+        },
+        {
+          "answer": "Modest Mussorgsky",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a chemical compound that contains at lest one carbon atom",
+      "answers": [
+        {
+          "answer": "Benzene",
+          "isCorrect": true
+        },
+        {
+          "answer": "Methanoic Acid",
+          "isCorrect": true
+        },
+        {
+          "answer": "Acetylene",
+          "isCorrect": true
+        },
+        {
+          "answer": "Ozone",
+          "isCorrect": false
+        },
+        {
+          "answer": "Ammonia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name an external territory of Australia",
+      "answers": [
+        {
+          "answer": "Norfolk Island",
+          "isCorrect": true
+        },
+        {
+          "answer": "Coral Sea Islands",
+          "isCorrect": true
+        },
+        {
+          "answer": "Cook Islands",
+          "isCorrect": false
+        },
+        {
+          "answer": "Niue",
+          "isCorrect": false
+        },
+        {
+          "answer": "Bounty Islands",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name the phrase that completes the title of the song 'Scatman (...)' by Scatman John",
+      "answers": [
+        {
+          "answer": "Ski-Ba-Bop-Ba-Dop-Bop",
+          "isCorrect": true
+        },
+        {
+          "answer": "Sta-Ma-Da-Ven-A-Bap",
+          "isCorrect": false
+        },
+        {
+          "answer": "Boom-Ba-Da-Boom-Ba-Doom-Ba",
+          "isCorrect": false
+        },
+        {
+          "answer": "Kem-Da-Bad-A-Ba",
+          "isCorrect": false
+        },
+        {
+          "answer": "Ti-Da-Va-Re-Va",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a role that won Katharine Hepburn a Best Actress Oscar",
+      "answers": [
+        {
+          "answer": "Eva Lovelace",
+          "isCorrect": true
+        },
+        {
+          "answer": "Christina Drayton",
+          "isCorrect": true
+        },
+        {
+          "answer": "Eleanor of Aquitaine",
+          "isCorrect": true
+        },
+        {
+          "answer": "Ethel Thayer",
+          "isCorrect": true
+        },
+        {
+          "answer": "Eliza Doolittle",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a Mercury Prize-winning album",
+      "answers": [
+        {
+          "answer": "'Suede' - Suede",
+          "isCorrect": true
+        },
+        {
+          "answer": "'Franz Ferdinand' - Franz Ferdinand",
+          "isCorrect": true
+        },
+        {
+          "answer": "'xx' - The xx",
+          "isCorrect": true
+        },
+        {
+          "answer": "'Portishead' - Portishead ",
+          "isCorrect": false
+        },
+        {
+          "answer": "'Elbow' - Elbow",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a book of the Catholic Bible",
+      "answers": [
+        {
+          "answer": "Esther",
+          "isCorrect": true
+        },
+        {
+          "answer": "Judith",
+          "isCorrect": true
+        },
+        {
+          "answer": "Deborah",
+          "isCorrect": false
+        },
+        {
+          "answer": "Rebecca",
+          "isCorrect": false
+        },
+        {
+          "answer": "Martha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Name a dish that, when cooked traditionally, is suitable for vegetarians",
+      "answers": [
+        {
+          "answer": "Dal Tadka",
+          "isCorrect": true
+        },
+        {
+          "answer": "Stargazy Pie",
+          "isCorrect": false
+        },
+        {
+          "answer": "Bangers and Mash",
+          "isCorrect": false
+        },
+        {
+          "answer": "Bouillabaisse",
+          "isCorrect": false
+        },
+        {
+          "answer": "California Roll",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "boardGame": [
+    {
+      "question": "Identify the genuine species of owl",
+      "answers": [
+        {
+          "answer": "Flammulated",
+          "isCorrect": true
+        },
+        {
+          "answer": "Barred",
+          "isCorrect": true
+        },
+        {
+          "answer": "Rufous",
+          "isCorrect": true
+        },
+        {
+          "answer": "Fulvous",
+          "isCorrect": true
+        },
+        {
+          "answer": "Stygian",
+          "isCorrect": true
+        },
+        {
+          "answer": "Chaco",
+          "isCorrect": true
+        },
+        {
+          "answer": "Psymonk",
+          "isCorrect": false
+        },
+        {
+          "answer": "Tessach",
+          "isCorrect": false
+        },
+        {
+          "answer": "Tete",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Identify the people whose forename or surname is Lewis",
+      "answers": [
+        {
+          "answer": "Scottish singer of 'Someone You Loved'",
+          "isCorrect": true
+        },
+        {
+          "answer": "Writer who wrote the poem 'Jabberwocky'",
+          "isCorrect": true
+        },
+        {
+          "answer": "Author of 'The Screwtape Letters'",
+          "isCorrect": true
+        },
+        {
+          "answer": "Won gold in the heptathlon at the 2000 Olympic Games",
+          "isCorrect": true
+        },
+        {
+          "answer": "Reached the UK Number 1 with the song 'Great Balls of Fire'",
+          "isCorrect": true
+        },
+        {
+          "answer": "Host of the Comedy Central series 'Root of All Evil'",
+          "isCorrect": true
+        },
+        {
+          "answer": "Founder of the website MoneySavingExpert.com",
+          "isCorrect": true
+        },
+        {
+          "answer": "Winner of the 2009 F1 World Championship",
+          "isCorrect": false
+        },
+        {
+          "answer": "American winner of the 1949 Nobel Prize for Literature",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Identify the countries that have won either the men's or women's Rugby World Cup",
+      "answers": [
+        {
+          "answer": "New Zealand",
+          "isCorrect": true
+        },
+        {
+          "answer": "Australia",
+          "isCorrect": true
+        },
+        {
+          "answer": "South Africa",
+          "isCorrect": true
+        },
+        {
+          "answer": "USA",
+          "isCorrect": true
+        },
+        {
+          "answer": "England",
+          "isCorrect": true
+        },
+        {
+          "answer": "France",
+          "isCorrect": false
+        },
+        {
+          "answer": "Ireland",
+          "isCorrect": false
+        },
+        {
+          "answer": "Canada",
+          "isCorrect": false
+        },
+        {
+          "answer": "Wales",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "thisOrThat": [
+    {
+      "question": "Orange",
+      "answers": [
+        {
+          "answer": "A colour of the rainbow",
+          "isCorrect": true
+        },
+        {
+          "answer": "Not a colour of the rainbow",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Arsenic",
+      "answers": [
+        {
+          "answer": "A chemical element",
+          "isCorrect": true
+        },
+        {
+          "answer": "Not a chemical element",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Cavendish",
+      "answers": [
+        {
+          "answer": "Not a variety of apple",
+          "isCorrect": true
+        },
+        {
+          "answer": "A variety of apple",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Cabaret",
+      "answers": [
+        {
+          "answer": "Not a Rodgers and Hammerstein musical",
+          "isCorrect": true
+        },
+        {
+          "answer": "A Rodgers and Hammerstein musical",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Tam o' Shanter",
+      "answers": [
+        {
+          "answer": "A style of hat",
+          "isCorrect": true
+        },
+        {
+          "answer": "Not a style of hat",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Anchorman: The Legend of Ron Burgundy",
+      "answers": [
+        {
+          "answer": "Not a film starring Ben Stiller",
+          "isCorrect": true
+        },
+        {
+          "answer": "A film starring Ben Stiller",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Latvia",
+      "answers": [
+        {
+          "answer": "Not a landlocked country",
+          "isCorrect": true
+        },
+        {
+          "answer": "A landlocked country",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "The New Forest",
+      "answers": [
+        {
+          "answer": "A UK National Park",
+          "isCorrect": true
+        },
+        {
+          "answer": "Not a UK National Park",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Centre",
+      "answers": [
+        {
+          "answer": "A position in netball",
+          "isCorrect": true
+        },
+        {
+          "answer": "Not a position in netball",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Richard III",
+      "answers": [
+        {
+          "answer": "Not a Tudor monarch",
+          "isCorrect": true
+        },
+        {
+          "answer": "A Tudor monarch",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Artemisia Gentileschi",
+      "answers": [
+        {
+          "answer": "Not an Italian composer",
+          "isCorrect": true
+        },
+        {
+          "answer": "An Italian composer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Poison Dart Frog",
+      "answers": [
+        {
+          "answer": "A vertebrate",
+          "isCorrect": true
+        },
+        {
+          "answer": "Not a vertebrate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Mozambique",
+      "answers": [
+        {
+          "answer": "Not a Spanish-speaking country",
+          "isCorrect": true
+        },
+        {
+          "answer": "A Spanish-speaking country",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "eBay",
+      "answers": [
+        {
+          "answer": "A company founded in the 1990s",
+          "isCorrect": true
+        },
+        {
+          "answer": "Not a company founded in the 1990s",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Kimbra",
+      "answers": [
+        {
+          "answer": "Not an Australian singer",
+          "isCorrect": true
+        },
+        {
+          "answer": "An Australian singer",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

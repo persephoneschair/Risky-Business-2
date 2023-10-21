@@ -457,8 +457,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 59405805}
-  - component: {fileID: 59405806}
   - component: {fileID: 59405807}
+  - component: {fileID: 59405806}
   m_Layer: 0
   m_Name: Operator
   m_TagString: Untagged
@@ -492,12 +492,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85e3651af7290841ae573c014eec2e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testMode: 1
-  skipOpeningTitles: 1
+  testMode: 0
+  skipOpeningTitles: 0
   fastValidation: 0
   recoveryMode: 0
   playerLimit: 40
-  questionPack: {fileID: 4900000, guid: 9847a245126a82f46aea3d43b95f81b5, type: 3}
+  specialArunModeForR3: 1
+  questionPack: {fileID: 4900000, guid: 6c05139bed4cda244aa577f5d8dc293b, type: 3}
+  legacyPack: {fileID: 0}
+  legacyAuthor: 
+  convertedPack: 
 --- !u!114 &59405807
 MonoBehaviour:
   m_ObjectHideFlags: 0

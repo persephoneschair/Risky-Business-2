@@ -1,0 +1,329 @@
+[
+  {
+    "question": "Name a word that appears in the title of a novel by Charles Dickens",
+    "correctAnswers": [
+      "David",
+      "Martin",
+      "Oliver",
+      "Nicholas"
+    ],
+    "incorrectAnswers": [
+      "Joseph"
+    ]
+  },
+  {
+    "question": "Name an app that is currently operated by Meta",
+    "correctAnswers": [
+      "Messenger",
+      "WhatsApp",
+      "Threads"
+    ],
+    "incorrectAnswers": [
+      "Snapchat",
+      "Zoom"
+    ]
+  },
+  {
+    "question": "Name a country that was a full member of the UN in the year 2000",
+    "correctAnswers": [
+      "Swaziland",
+      "Myanmar"
+    ],
+    "incorrectAnswers": [
+      "East Timor",
+      "Montenegro",
+      "Switzerland"
+    ]
+  },
+  {
+    "question": "Name an actor who has competed at a Commonwealth Games",
+    "correctAnswers": [
+      "Jason Statham"
+    ],
+    "incorrectAnswers": [
+      "Idris Elba",
+      "Gerard Butler",
+      "Sean Connery",
+      "Liam Neeson"
+    ]
+  },
+  {
+    "question": "Name a composer who was alive during the 20th century",
+    "correctAnswers": [
+      "Igor Stravinsky",
+      "Sergei Rachmaninoff",
+      "Dmitri Shostakovich ",
+      "Sergei Prokofiev "
+    ],
+    "incorrectAnswers": [
+      "Modest Mussorgsky"
+    ]
+  },
+  {
+    "question": "Name a chemical compound that contains at lest one carbon atom",
+    "correctAnswers": [
+      "Benzene",
+      "Methanoic Acid",
+      "Acetylene"
+    ],
+    "incorrectAnswers": [
+      "Ozone",
+      "Ammonia"
+    ]
+  },
+  {
+    "question": "Name an external territory of Australia",
+    "correctAnswers": [
+      "Norfolk Island",
+      "Coral Sea Islands"
+    ],
+    "incorrectAnswers": [
+      "Cook Islands",
+      "Niue",
+      "Bounty Islands"
+    ]
+  },
+  {
+    "question": "Name the phrase that completes the title of the song 'Scatman (...)' by Scatman John",
+    "correctAnswers": [
+      "Ski-Ba-Bop-Ba-Dop-Bop"
+    ],
+    "incorrectAnswers": [
+      "Sta-Ma-Da-Ven-A-Bap",
+      "Boom-Ba-Da-Boom-Ba-Doom-Ba",
+      "Kem-Da-Bad-A-Ba",
+      "Ti-Da-Va-Re-Va"
+    ]
+  },
+  {
+    "question": "Name a role that won Katharine Hepburn a Best Actress Oscar",
+    "correctAnswers": [
+      "Eva Lovelace",
+      "Christina Drayton",
+      "Eleanor of Aquitaine",
+      "Ethel Thayer"
+    ],
+    "incorrectAnswers": [
+      "Eliza Doolittle"
+    ]
+  },
+  {
+    "question": "Name a Mercury Prize-winning album",
+    "correctAnswers": [
+      "'Suede' - Suede",
+      "'Franz Ferdinand' - Franz Ferdinand",
+      "'xx' - The xx"
+    ],
+    "incorrectAnswers": [
+      "'Portishead' - Portishead ",
+      "'Elbow' - Elbow"
+    ]
+  },
+  {
+    "question": "Name a book of the King James Bible",
+    "correctAnswers": [
+      "Esther",
+      "Judith"
+    ],
+    "incorrectAnswers": [
+      "Deborah",
+      "Rebecca",
+      "Martha"
+    ]
+  },
+  {
+    "question": "Name a dish that, when cooked traditionally, is suitable for vegetarians",
+    "correctAnswers": [
+      "Dal Tadka"
+    ],
+    "incorrectAnswers": [
+      "Stargazy Pie",
+      "Bangers and Mash",
+      "Bouillabaisse",
+      "California Roll"
+    ]
+  },
+  {
+    "question": "Identify the genuine species of owl",
+    "correctAnswers": [
+      "Flammulated",
+      "Barred",
+      "Rufous",
+      "Fulvous",
+      "Stygian",
+      "Chaco"
+    ],
+    "incorrectAnswers": [
+      "Psymonk",
+      "Tessach",
+      "Tete"
+    ]
+  },
+  {
+    "question": "Identify the people whose forename or surname is Lewis",
+    "correctAnswers": [
+      "Scottish singer of 'Someone You Loved'",
+      "Writer who wrote the poem 'Jabberwocky'",
+      "Author of 'The Screwtape Letters'",
+      "Won gold in the heptathlon at the 2000 Olympic Games",
+      "Reached the UK Number 1 with the song 'Great Balls of Fire'",
+      "Host of the Comedy Central series 'Root of All Evil'",
+      "Founder of the website MoneySavingExpert.com"
+    ],
+    "incorrectAnswers": [
+      "Winner of the 2009 F1 World Championship",
+      "American winner of the 1949 Nobel Prize for Literature"
+    ]
+  },
+  {
+    "question": "Identify the countries that have won either the men's or women's Rugby World Cup",
+    "correctAnswers": [
+      "New Zealand",
+      "Australia",
+      "South Africa",
+      "USA",
+      "England"
+    ],
+    "incorrectAnswers": [
+      "France",
+      "Ireland",
+      "Canada",
+      "Wales"
+    ]
+  },
+  {
+    "question": "Orange",
+    "correctAnswers": [
+      "A colour of the rainbow"
+    ],
+    "incorrectAnswers": [
+      "Not a colour of the rainbow"
+    ]
+  },
+  {
+    "question": "Arsenic",
+    "correctAnswers": [
+      "A chemical element"
+    ],
+    "incorrectAnswers": [
+      "Not a chemical element"
+    ]
+  },
+  {
+    "question": "Cavendish",
+    "correctAnswers": [
+      "Not a variety of apple"
+    ],
+    "incorrectAnswers": [
+      "A variety of apple"
+    ]
+  },
+  {
+    "question": "Cabaret",
+    "correctAnswers": [
+      "Not a Rodgers and Hammerstein musical"
+    ],
+    "incorrectAnswers": [
+      "A Rodgers and Hammerstein musical"
+    ]
+  },
+  {
+    "question": "Tam o' Shanter",
+    "correctAnswers": [
+      "A style of hat"
+    ],
+    "incorrectAnswers": [
+      "Not a style of hat"
+    ]
+  },
+  {
+    "question": "Anchorman: The Legend of Ron Burgundy",
+    "correctAnswers": [
+      "Not a film starring Ben Stiller"
+    ],
+    "incorrectAnswers": [
+      "A film starring Ben Stiller"
+    ]
+  },
+  {
+    "question": "Latvia",
+    "correctAnswers": [
+      "Not a landlocked country"
+    ],
+    "incorrectAnswers": [
+      "A landlocked country"
+    ]
+  },
+  {
+    "question": "The New Forest",
+    "correctAnswers": [
+      "A UK National Park"
+    ],
+    "incorrectAnswers": [
+      "Not a UK National Park"
+    ]
+  },
+  {
+    "question": "Centre",
+    "correctAnswers": [
+      "A position in netball"
+    ],
+    "incorrectAnswers": [
+      "Not a position in netball"
+    ]
+  },
+  {
+    "question": "Richard III",
+    "correctAnswers": [
+      "Not a Tudor monarch"
+    ],
+    "incorrectAnswers": [
+      "A Tudor monarch"
+    ]
+  },
+  {
+    "question": "Artemisia Gentileschi",
+    "correctAnswers": [
+      "Not an Italian composer"
+    ],
+    "incorrectAnswers": [
+      "An Italian composer"
+    ]
+  },
+  {
+    "question": "Poison Dart Frog",
+    "correctAnswers": [
+      "A vertebrate"
+    ],
+    "incorrectAnswers": [
+      "Not a vertebrate"
+    ]
+  },
+  {
+    "question": "Mozambique",
+    "correctAnswers": [
+      "Not a Spanish-speaking country"
+    ],
+    "incorrectAnswers": [
+      "A Spanish-speaking country"
+    ]
+  },
+  {
+    "question": "eBay",
+    "correctAnswers": [
+      "A company founded in the 1990s"
+    ],
+    "incorrectAnswers": [
+      "Not a company founded in the 1990s"
+    ]
+  },
+  {
+    "question": "Kimbra",
+    "correctAnswers": [
+      "Not an Australian singer"
+    ],
+    "incorrectAnswers": [
+      "An Australian singer"
+    ]
+  }
+]

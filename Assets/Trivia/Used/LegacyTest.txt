@@ -1,0 +1,329 @@
+[
+  {
+    "question": "Name a US state with a coastline on the Gulf of Mexico",
+    "correctAnswers": [
+      "Texas",
+      "Louisiana",
+      "Mississippi",
+      "Alabama"
+    ],
+    "incorrectAnswers": [
+      "Georgia"
+    ]
+  },
+  {
+    "question": "Name a musical act that has had a UK Top 20 hit with a song called 'Human'",
+    "correctAnswers": [
+      "The Killers",
+      "Rag 'N' Bone Man",
+      "Christina Perri"
+    ],
+    "incorrectAnswers": [
+      "Peter Gabriel",
+      "Radiohead"
+    ]
+  },
+  {
+    "question": "Name a cocktail that traditionally contains gin",
+    "correctAnswers": [
+      "Tom Collins",
+      "Negroni"
+    ],
+    "incorrectAnswers": [
+      "Cosmopolitan",
+      "Screwdriver",
+      "Moscow Mule"
+    ]
+  },
+  {
+    "question": "Name a bird native to the Americas",
+    "correctAnswers": [
+      "Dickcissel"
+    ],
+    "incorrectAnswers": [
+      "Dickerby",
+      "Dickfiscul",
+      "Dickreyer",
+      "Dickidendron"
+    ]
+  },
+  {
+    "question": "Name a video file format",
+    "correctAnswers": [
+      "MP4",
+      "MOV",
+      "WMV",
+      "AVI"
+    ],
+    "incorrectAnswers": [
+      "WAV"
+    ]
+  },
+  {
+    "question": "Name a show that Romesh Ranganathan has appeared in at least 15 episodes of",
+    "correctAnswers": [
+      "Judge Romesh",
+      "The Ranganation",
+      "Rob & Romesh Vs."
+    ],
+    "incorrectAnswers": [
+      "Romesh's Look Back to the Future",
+      "The Misadventures of Romesh Ranganathan"
+    ]
+  },
+  {
+    "question": "Name a film that has won a 'Worst Picture' Razzie award",
+    "correctAnswers": [
+      "I Know Who Killed Me",
+      "Wild Wild West"
+    ],
+    "incorrectAnswers": [
+      "Baywatch",
+      "Dirty Grandpa",
+      "Rocky V"
+    ]
+  },
+  {
+    "question": "Name a chemical symbol of a halogen",
+    "correctAnswers": [
+      "I"
+    ],
+    "incorrectAnswers": [
+      "A",
+      "E",
+      "O",
+      "U"
+    ]
+  },
+  {
+    "question": "Name a former Chancellor of the Exchequer",
+    "correctAnswers": [
+      "Gordon Brown",
+      "John Major",
+      "James Callaghan",
+      "Harold MacMillan"
+    ],
+    "incorrectAnswers": [
+      "Edward Heath"
+    ]
+  },
+  {
+    "question": "Name an ingredient used in Mary Berry's 'Ginger Spiced Pudding'",
+    "correctAnswers": [
+      "Bicarbonate of Soda",
+      "Ground Cinnamon",
+      "Freshly Grated Nutmeg"
+    ],
+    "incorrectAnswers": [
+      "Caster Sugar",
+      "Yeast"
+    ]
+  },
+  {
+    "question": "Name a sport where teams consist of an even number of players",
+    "correctAnswers": [
+      "Volleyball",
+      "Australian Rules Football"
+    ],
+    "incorrectAnswers": [
+      "Netball",
+      "Rugby Union",
+      "Water Polo"
+    ]
+  },
+  {
+    "question": "Name the first word of a 1987 UK Top 20 Hit for A-Ha",
+    "correctAnswers": [
+      "Manhattan"
+    ],
+    "incorrectAnswers": [
+      "Staten",
+      "Brooklyn",
+      "Bronx",
+      "Queen"
+    ]
+  },
+  {
+    "question": "Identify the sports that Team GB won at least one gold medal in at the Tokyo 2020 Olympics",
+    "correctAnswers": [
+      "Equestrian",
+      "Sailing",
+      "Diving",
+      "Boxing"
+    ],
+    "incorrectAnswers": [
+      "Weightlifting",
+      "Canoeing",
+      "Taekwondoe",
+      "Hockey",
+      "Skateboarding"
+    ]
+  },
+  {
+    "question": "Identify the words that appear in titles of 'The Chronicles of Narnia' books by C.S. Lewis",
+    "correctAnswers": [
+      "Silver",
+      "Voyage",
+      "Horse",
+      "Witch",
+      "Prince"
+    ],
+    "incorrectAnswers": [
+      "Final",
+      "Land",
+      "Distant",
+      "Traveller"
+    ]
+  },
+  {
+    "question": "Identify the dances that were performed in Season 1 of the U.S. version of 'Dancing with the Stars'",
+    "correctAnswers": [
+      "Foxtrot",
+      "Rumba",
+      "Paso Doble",
+      "Waltz",
+      "Quickstep",
+      "Jive",
+      "Samba"
+    ],
+    "incorrectAnswers": [
+      "American Smooth",
+      "Charleston"
+    ]
+  },
+  {
+    "question": "By definition, which of these works with stone?",
+    "correctAnswers": [
+      "Mason"
+    ],
+    "incorrectAnswers": [
+      "Fortnum"
+    ]
+  },
+  {
+    "question": "Which of these is thrown in Lawn Bowls?",
+    "correctAnswers": [
+      "Jack"
+    ],
+    "incorrectAnswers": [
+      "Jill"
+    ]
+  },
+  {
+    "question": "Candy Crush Saga is a game by which developer?",
+    "correctAnswers": [
+      "King"
+    ],
+    "incorrectAnswers": [
+      "Queen"
+    ]
+  },
+  {
+    "question": "Which of these words appears in the Collins English Dictionary as a verb?",
+    "correctAnswers": [
+      "Bob"
+    ],
+    "incorrectAnswers": [
+      "Vic"
+    ]
+  },
+  {
+    "question": "Which of these is a part of an arrow?",
+    "correctAnswers": [
+      "Shaft"
+    ],
+    "incorrectAnswers": [
+      "Share"
+    ]
+  },
+  {
+    "question": "Which of these words is used to mean the number 20?",
+    "correctAnswers": [
+      "Score"
+    ],
+    "incorrectAnswers": [
+      "Count"
+    ]
+  },
+  {
+    "question": "The jazz musician dubbed 'The King of Swing' had what first name?",
+    "correctAnswers": [
+      "Benny"
+    ],
+    "incorrectAnswers": [
+      "Frankie"
+    ]
+  },
+  {
+    "question": "What is the first name of the current Commissioner of the Metropolitan Police?",
+    "correctAnswers": [
+      "Cressida"
+    ],
+    "incorrectAnswers": [
+      "Troilus"
+    ]
+  },
+  {
+    "question": "In astronomy, which of these events has already happened?",
+    "correctAnswers": [
+      "Big Bang"
+    ],
+    "incorrectAnswers": [
+      "Big Freeze"
+    ]
+  },
+  {
+    "question": "Which number is 1000101 when written in binary?",
+    "correctAnswers": [
+      "69"
+    ],
+    "incorrectAnswers": [
+      "96"
+    ]
+  },
+  {
+    "question": "Which of these celebrities was born in London?",
+    "correctAnswers": [
+      "Naomi Campbell"
+    ],
+    "incorrectAnswers": [
+      "Nicky Campbell"
+    ]
+  },
+  {
+    "question": "Which of these instructions in the 'Cha Cha Slide' appears first?",
+    "correctAnswers": [
+      "To the left"
+    ],
+    "incorrectAnswers": [
+      "To the right"
+    ]
+  },
+  {
+    "question": "What is the most populous country in Africa?",
+    "correctAnswers": [
+      "Nigeria"
+    ],
+    "incorrectAnswers": [
+      "Algeria"
+    ]
+  },
+  {
+    "question": "Comedian Michael Dapaah released 'Man's Not Hot' in 2017 under what stage name?",
+    "correctAnswers": [
+      "Big Shaq"
+    ],
+    "incorrectAnswers": [
+      "Big Narstie"
+    ]
+  },
+  {
+    "question": "BigManArun is how many 'hands' tall?",
+    "correctAnswers": [
+      "17.5"
+    ],
+    "incorrectAnswers": [
+      "32.5"
+    ]
+  }
+]

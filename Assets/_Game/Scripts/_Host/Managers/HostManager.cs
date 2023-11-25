@@ -165,6 +165,12 @@ public class HostManager : SingletonMonoBehaviour<HostManager>
                 LeaderboardManager.Get.OrderByRiskPoints();
                 break;
 
+
+            case EventLibrary.ClientEventType.PasteAlert:
+                //Silent alarm indicating some text has been pasted into an answer box
+                DebugLog.Print($"A PASTE ALERT WAS RAISED BY {p.playerName} ({p.twitchName}): {data}", DebugLog.StyleOption.Bold, DebugLog.ColorOption.Purple);
+                break;
+
             default:
                 break;
         }

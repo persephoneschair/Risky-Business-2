@@ -26,7 +26,7 @@ public static class EventLibrary
         WrongApp,
         WRONGAPP
     };
-    public enum ClientEventType { Default, StoredValidation, SimpleQuestion, MultipleChoiceQuestion, MultiSelectQuestion };
+    public enum ClientEventType { Default, StoredValidation, SimpleQuestion, MultipleChoiceQuestion, MultiSelectQuestion, PasteAlert };
 
     public static string GetHostEventTypeString(HostEventType e)
     {
